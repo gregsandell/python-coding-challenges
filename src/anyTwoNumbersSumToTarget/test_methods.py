@@ -2,10 +2,10 @@ import unittest
 from . methods import anyTwoNumbersSumToTargetTwoLoops, anyTwoNumsSumToTargetRecursive
 from array import array
 
+test_array1 = array('i', [2, 6, 46, 3])
+test_array2 = array('i', [2, 7, 46, 3])
 
 class MyTwoLoopsTestCase(unittest.TestCase):
-    test_array1 = array('i', [2, 6, 46, 3])
-    test_array2 = array('i', [2, 7, 46, 3])
     result1 = anyTwoNumbersSumToTargetTwoLoops(test_array1, 8)
     result2 = anyTwoNumbersSumToTargetTwoLoops(test_array2, 8)
 
@@ -16,8 +16,6 @@ class MyTwoLoopsTestCase(unittest.TestCase):
         self.assertEqual(self.result2, False)  # add assertion here
 
 class MyRecursionTestCase(unittest.TestCase):
-    test_array1 = array('i', [2, 6, 46, 3])
-    test_array2 = array('i', [2, 7, 46, 3])
     result1 = anyTwoNumsSumToTargetRecursive(8, test_array1)
     result2 = anyTwoNumsSumToTargetRecursive(8, test_array2)
 
