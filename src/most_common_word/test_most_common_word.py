@@ -1,4 +1,10 @@
-from most_common_word import sanitize, filterStopWords, makeWordCountMap, findMaxWord, most_common_word
+from most_common_word import (
+    sanitize,
+    filterStopWords,
+    makeWordCountMap,
+    findMaxWord,
+    most_common_word
+)
 
 class TestFindMaxWord:
     def test_winner(self):
