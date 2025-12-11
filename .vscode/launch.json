@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug pytest (current file)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/.venv/bin/pytest",
+        "args": [
+          "-q",
+          "${file}"
+        ],
+        "console": "integratedTerminal",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        },
+        "justMyCode": true
+      },
+      {
+        "name": "Debug pytest (single test by node id)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/.venv/bin/pytest",
+        "args": [
+          "-q",
+          "-k",
+          "test_most_common_word",
+          "tests"
+        ],
+        "console": "integratedTerminal",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        },
+        "justMyCode": true
+      }
+    ]
+  }
+  

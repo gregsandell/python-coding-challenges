@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": ".venv/bin/python",          // or .venv\\Scripts\\python.exe on Windows
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+      "src"
+    ],
+    // If pytest is not on PATH for VS Code, optionally point to it:
+    // "python.testing.pytestPath": ".venv/bin/pytest",
+  
+    // Ensure src/ is importable (src layout)
+    "terminal.integrated.env.osx": {
+      "PYTHONPATH": "${workspaceFolder}/src"
+    },
+    "terminal.integrated.env.linux": {
+      "PYTHONPATH": "${workspaceFolder}/src"
+    },
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder}\\src"
+    },
+  
+    // Optional: show test status in the editor
+    "testing.autoTestDiscoverOnOpen": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
+  }
+  
