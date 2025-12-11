@@ -9,6 +9,7 @@ dependencies = [
     "ptw>=1.0.1",
     "pydantic>=2.12.5",
     "pytest>=9.0.2",
+    "pytest-testdox>=3.1.0",
     "pytest-watch>=4.2.0",
     "pyyaml>=6.0.3",
     "uvicorn>=0.38.0",
