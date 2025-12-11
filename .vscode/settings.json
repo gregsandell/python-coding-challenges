@@ -21,6 +21,7 @@
   
     // Optional: show test status in the editor
     "testing.autoTestDiscoverOnOpen": true,
-    "python.testing.autoTestDiscoverOnSaveEnabled": true
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "workbench.tree.indent": 28
   }
   
